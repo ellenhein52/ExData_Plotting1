@@ -12,7 +12,7 @@ power$DateTime <- strptime(paste(power$Date, power$Time), '%d/%m/%Y %H:%M:%S', t
 png('plot_2.png', width=480, height=480)
 plot(power$DateTime, power$Global_active_power, 
      type='l', 
-     xlab='Time', 
+     xlab='', 
      ylab='Global Active Power (kilowatts)',
      main='Global Active Power Over Time')
 dev.off()

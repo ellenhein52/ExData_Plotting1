@@ -13,7 +13,7 @@ png('plot_3.png', width=480, height=480)
 plot(power$DateTime, power$Sub_metering_1, 
      col='black', 
      type='l', 
-     xlab='Time', 
+     xlab='', 
      ylab='Energy sub metering')
 lines(power$DateTime, power$Sub_metering_2, 
       col='red')
