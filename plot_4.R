@@ -13,18 +13,18 @@ par(mfrow=c(2,2)) # Create a 2x2 plot
 # Plot Global Active Power over time
 plot(power$DateTime, power$Global_active_power, 
      type='l', 
-     xlab='Time', 
+     xlab='', 
      ylab='Global Active Power')
 # Plot Voltage over time
 plot(power$DateTime, power$Voltage, 
      type='l',
-     xlab='Time', 
+     xlab='datetime', 
      ylab='Voltage')
 # Plot Sub metering 1, 2, and 3 over time
 plot(power$DateTime, power$Sub_metering_1, 
      col='black', 
      type='l', 
-     xlab='Time', 
+     xlab='', 
      ylab='Energy sub metering')
 lines(power$DateTime, power$Sub_metering_2, 
       col='red')
@@ -38,6 +38,6 @@ legend('topright',
 # Plot Global Reactive Power over time
 plot(power$DateTime, power$Global_reactive_power, 
      type='l',
-     xlab='Time', 
-     ylab='Global Reactive Power')
+     xlab='datetime', 
+     ylab='Global_reactive_power')
 dev.off()
